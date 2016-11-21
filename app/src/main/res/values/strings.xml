@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Guest Form</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_menu">MENU</string>
+    <string name="title_activity_guest_form">GUEST DETAILS</string>
+    <string name="title_activity_biometrics">GUEST DETAILS CONT\'D</string>
+
+    <string-array name="gender_array">
+        <item>--SELECT GENDER--</item>
+        <item>MALE</item>
+        <item>FEMALE</item>
+    </string-array>
+
+    <string-array name="marital_status">
+        <item>--SELECT MARITAL STATUS--</item>
+        <item>Single</item>
+        <item>Married</item>
+        <item>Widow</item>
+        <item>Divorced</item>
+    </string-array>
+
+    <string-array name="age_group">
+        <item>--SELECT AGE GROUP--</item>
+        <item>17 to 25</item>
+        <item>26 to 35</item>
+        <item>36 to 45</item>
+        <item>46 to 55</item>
+        <item>56 to 65</item>
+        <item>66 to 75</item>
+        <item>75+</item>
+    </string-array>
+
+    <string-array name="num_child">
+        <item>--SELECT NUMBER OF CHILDREN--</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8+</item>
+    </string-array>
+
+    <string-array name="about_us">
+        <item>--HOW DID YOU HEAR ABOUT US?--</item>
+        <item>Driving by</item>
+        <item>Web Search</item>
+        <item>Friend or Relative</item>
+        <item>Social Media</item>
+        <item>Other</item>
+    </string-array>
+    <string name="title_activity_department_report">Department Report</string>
+
+    <string-array name="Department_Reason">
+        <item>--SELECT REASON--</item>
+        <item>Sick</item>
+        <item>Out of Town</item>
+        <item>Others</item>
+    </string-array>
+
+</resources>

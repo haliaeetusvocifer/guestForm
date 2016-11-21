@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/signaturePad"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:minWidth="100dp"
+        android:minHeight="100dp"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:eventsInterceptionEnabled="true"
+        android:fadeEnabled="false"
+        android:gestureColor="#060805"
+        android:gestureStrokeLengthThreshold="0.00001"
+        android:gestureStrokeType="multiple"
+        android:orientation="vertical"
+        android:background="#fbffca"
+        android:layout_below="@+id/signLabel"
+        android:layout_centerHorizontal="true">
+    </android.gesture.GestureOverlayView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CAPTURE"
+        android:id="@+id/signatureButton"
+        android:width="160dp"
+        android:onClick="saveSig"
+        android:layout_below="@+id/signaturePad"
+        android:layout_toLeftOf="@+id/submitRegDetails"
+        android:layout_toStartOf="@+id/submitRegDetails" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENU"
+        android:id="@+id/submitRegDetails"
+        android:width="160dp"
+        android:layout_alignRight="@+id/signaturePad"
+        android:layout_alignEnd="@+id/signaturePad"
+        android:layout_below="@+id/signaturePad" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Below"
+        android:id="@+id/signLabel"
+
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signImage"
+        android:layout_below="@+id/signatureButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>

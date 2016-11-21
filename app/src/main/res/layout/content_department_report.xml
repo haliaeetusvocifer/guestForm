@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_department_report"
+    tools:context="com.lotusbetaanalytics.lban.guestform.DepartmentReport">
+
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Department Name"
+        android:ems="10"
+        android:id="@+id/DepartmentName"
+        android:width="320dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Number in Department?"
+        android:ems="10"
+        android:id="@+id/DepartmentNumber"
+        android:layout_below="@+id/DepartmentName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/DepartmentName"
+        android:layout_alignEnd="@+id/DepartmentName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="How many officiated?"
+        android:ems="10"
+        android:id="@+id/DepartmentOfficiating"
+        android:layout_below="@+id/DepartmentNumber"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/DepartmentNumber"
+        android:layout_alignEnd="@+id/DepartmentNumber" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="What happened to those absent?"
+        android:id="@+id/ReasonTextView"
+        android:layout_below="@+id/DepartmentOfficiating"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ReasonTextView"
+        android:id="@+id/DepartmentOfficialReason"
+        android:entries="@array/Department_Reason">
+    </Spinner>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="Issues encountered Today?"
+        android:ems="10"
+        android:id="@+id/DepartmentIssue"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/ReasonTextView"
+        android:layout_alignEnd="@+id/ReasonTextView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="Suggested Solution"
+        android:ems="10"
+        android:id="@+id/DepartmentSolution"
+        android:layout_below="@+id/DepartmentIssue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/DepartmentIssue"
+        android:layout_alignEnd="@+id/DepartmentIssue" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="Recommendation"
+        android:ems="10"
+        android:id="@+id/DepartmentRecommendation"
+        android:layout_below="@+id/DepartmentSolution"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/DepartmentSolution"
+        android:layout_alignEnd="@+id/DepartmentSolution" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Date and Time"
+        android:id="@+id/newdate"
+        android:visibility="invisible"
+        android:layout_below="@+id/DepartmentRecommendation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/DepartmentRecommendation"
+        android:layout_alignEnd="@+id/DepartmentRecommendation" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:id="@+id/SaveDepartment"
+        android:layout_gravity="bottom|end"
+        android:layout_alignTop="@+id/MenuRegistration"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENU"
+        android:id="@+id/MenuRegistration"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="40dp" />
+
+
+
+
+    <!--<EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Middle Name"
+        android:ems="10"
+        android:id="@+id/MiddleName"
+        android:layout_below="@+id/FirstName"
+        android:width="320dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Surname"
+        android:ems="10"
+        android:id="@+id/LastName"
+        android:layout_below="@+id/MiddleName"
+        android:width="320dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />-->
+
+
+
+
+</RelativeLayout>
